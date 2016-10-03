@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "outDir": "dist/"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

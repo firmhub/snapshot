@@ -1,0 +1,54 @@
+{
+  "name": "mocha-snapshot",
+  "version": "1.0.0",
+  "description": "Regression testing for mocha",
+  "author": "Amandeep",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R reporter --watch-extensions txt,png",
+    "build": "tsc; rollup -c",
+    "watch": "./parallel.sh 'tsc -w' 'rollup -c -w'"
+  },
+  "dependencies": {
+    "diff2html": "2.0.6",
+    "difflib": "0.2.4",
+    "jimp": "0.2.27",
+    "js-beautify": "1.6.4",
+    "mithril": "github:lhorie/mithril.js#rewrite",
+    "mkdirp": "0.5.1",
+    "pretty-data": "0.40.0",
+    "socket.io": "1.4.8",
+    "st": "1.2.0"
+  },
+  "bundledDependencies": [
+    "diff2html",
+    "difflib",
+    "jimp",
+    "mithril",
+    "mkdirp",
+    "pretty-data"
+  ],
+  "peerDependencies": {
+    "mocha": "3.x"
+  },
+  "devDependencies": {
+    "@types/js-beautify": "0.0.28",
+    "@types/mkdirp": "^0.3.29",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.41",
+    "@types/socket.io": "^1.4.27",
+    "rollup": "^0.36.1",
+    "rollup-plugin-typescript": "^0.8.1",
+    "should": "^11.1.0",
+    "typescript": "^2.0.3"
+  },
+  "keywords": [
+    "mocha",
+    "visual regression",
+    "test",
+    "testing",
+    "custom",
+    "reporter"
+  ]
+}
