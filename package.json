@@ -1,6 +1,6 @@
 {
   "name": "mocha-snapshot",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Regression testing for mocha",
   "author": "Amandeep",
   "license": "MIT",
@@ -41,6 +41,7 @@
     "rollup": "^0.36.1",
     "rollup-plugin-typescript": "^0.8.1",
     "should": "^11.1.0",
+    "mocha": "3.x",
     "typescript": "^2.0.3"
   },
   "keywords": [
